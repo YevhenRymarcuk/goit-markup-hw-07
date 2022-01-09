@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* Палитра сайта */
+/* 
+--------Фон страницы-----
+Первичный цвет фона: #ffffff
+Вторичный цвет фона: #2f303a
+Цвет фона отдельных секций: #F5F4FA
+
+--------Цвет текста------
+Первичный цвет текста: #757575
+Вторичный цвет текста: #ffffff
+Цвет текста заголовков: #212121
+Базовый цвет логотипа: #000000
+
+--------Цвет кнопок------
+Первичный цвет кнопок: #F5F4FA
+Вторичный цвет кнопок: #2196F3
+
+--------Цвет иконок------
+Первичный цвет иконок: #AFB1B8
+Вторичный цвет иконок: #ffffff
+
+--------Цвет фона иконок------
+Первичный цвет фона иконок: #ffffff
+Вторичный цвет фона иконок: rgba(255, 255, 255, 0.1)
+
+--------Цвет акцента-----
+Первичный цвет акцента текста: #2196F3
+Первичный цвет акцента элемента: #2196F3
+Вторичный цвет акцента элемента: #ffffff
+Третичный цвет акцента элемента: #188CE8
+
+
+/* Геометрия */
+/* 
+--------Зазоры в сетках элементов-----
+Первичный зазор между элементами сетки: 30px
+
+
+/* Переходы/анимация */
+/*
+--------Время перехода/анимации-----
+Первичное время перехода/анимации: 250ms
+
+--------Функция распределения времени анимации-----
+Первичная функция распределения времени: cubic-bezier(0.4, 0, 0.2, 1)
+*/
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --section-bg-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --logo-basic-text-color: #000000;
+  --primary-button-color: #f5f4fa;
+  --secondary-button-color: #2196f3;
+  --primary-icon-color: #afb1b8;
+  --secondary-icon-color: #ffffff;
+  --primary-bg-color-icon: #ffffff;
+  --secondary-bg-color-icon: rgba(255, 255, 255, 0.1);
+  /* Палитра акцентов */
+  --primary-text-accent-color: #2196f3;
+  --primary-element-accent-color: #2196f3;
+  --secondary-element-accent-color: #ffffff;
+  --tertiary-element-accent-color: #188ce8;
+  /* Переменная зазоров в сетках элементов */
+  --flexbox-items-gap: 30px;
+  /* Время перехода/анимации */
+  --primary-duration: 250ms;
+  /* Функция распределения времени анимации */
+  --primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  color: var(--title-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+/*# sourceMappingURL=main.css.map */
