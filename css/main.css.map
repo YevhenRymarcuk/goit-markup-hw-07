@@ -4,7 +4,8 @@
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_base-styles.scss"
+        "../sass/utils/_base-styles.scss",
+        "../sass/utils/_mixins.scss"
     ],
     "names": [],
     "file": "main.css"
