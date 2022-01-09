@@ -16,43 +16,6 @@
   align-items: center;
 }
 
-.logo {
-  color: var(--logo-basic-text-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  transition-property: color;
-  transition-duration: var(--primary-duration);
-  transition-timing-function: var(--primary-timing-function);
-}
-
-.logo__accent {
-  color: var(--primary-text-accent-color);
-}
-
-.footer__logo {
-  display: inline-block;
-
-  margin: 0 0 20px 0;
-  padding: 0;
-
-  color: var(--secondary-text-color);
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--primary-text-accent-color);
-}
-
 .nav-list {
   font-weight: 500;
   font-size: 14px;

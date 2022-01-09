@@ -137,4 +137,42 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+/* Компонент LOGO */
+.logo {
+  color: var(--logo-basic-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--primary-duration);
+       -o-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--primary-timing-function);
+       -o-transition-timing-function: var(--primary-timing-function);
+          transition-timing-function: var(--primary-timing-function);
+}
+
+.logo__accent {
+  color: var(--primary-text-accent-color);
+}
+
+.logo:hover, .logo:focus {
+  color: var(--primary-text-accent-color);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: var(--secondary-text-color);
+}
 /*# sourceMappingURL=main.css.map */
