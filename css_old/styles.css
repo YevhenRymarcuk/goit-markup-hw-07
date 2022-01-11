@@ -631,8 +631,12 @@ address {
 
 .footer .contact-mail,
 .footer .contact-number {
+  display: block;
+
   margin: 0;
   padding: 0;
+
+  text-decoration: none;
 
   color: rgba(255, 255, 255, 0.6);
 }
