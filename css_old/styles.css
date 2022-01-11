@@ -4,15 +4,15 @@
   display: flex;
 }
 
-.benefits-item {
+.benefits-list__item {
   flex-basis: calc(100% - (3 * var(--flexbox-items-gap) / 4));
 }
 
-.benefits-item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-right: var(--flexbox-items-gap);
 }
 
-.benefits-icon-box {
+.benefits-list__icon-box {
   width: 270px;
   height: 120px;
   margin-bottom: var(--flexbox-items-gap);
@@ -26,7 +26,7 @@
   border-radius: 4px;
 }
 
-.benefits-list .item-title {
+.benefits-list__item-title {
   margin-bottom: 10px;
 
   font-weight: bold;
