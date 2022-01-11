@@ -1,8 +1,4 @@
 /* Модальное окно */
-input {
-  margin: 0;
-  padding: 0;
-}
 
 .backdrop {
   position: fixed;
@@ -44,7 +40,7 @@ input {
   border-radius: 4px;
 }
 
-.closing-modal-btn {
+.modal__closing-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -55,8 +51,6 @@ input {
 
   width: 30px;
   height: 30px;
-  padding: 0;
-  margin: 0;
 
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -67,13 +61,14 @@ input {
   transition-timing-function: var(--primary-timing-function);
 }
 
-.closing-modal-btn:hover,
-.closing-modal-btn:focus {
+.modal__closing-button:hover,
+.modal__closing-button:focus {
+  background-color: currentColor;
   cursor: pointer;
   fill: var(--primary-element-accent-color);
 }
 
-.title-form {
+.modal__offer {
   margin-bottom: 12px;
 
   font-weight: bold;
@@ -85,7 +80,7 @@ input {
   color: #212121;
 }
 
-.forms-label {
+.form__lable {
   position: relative;
 
   display: block;
@@ -98,7 +93,15 @@ input {
   letter-spacing: 0.01em;
 }
 
-.forms-input {
+.form__lable--another-margin {
+  margin-bottom: 20px;
+}
+
+.form__lable--no-margin {
+  margin: 0;
+}
+
+.form__input {
   width: 100%;
   height: 40px;
   margin-top: 4px;
@@ -118,7 +121,7 @@ input {
   transition-timing-function: var(--primary-timing-function);
 }
 
-.forms-icon {
+.form__icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
@@ -128,32 +131,28 @@ input {
   transition-timing-function: var(--primary-timing-function);
 }
 
-.forms-label:hover {
+.form__lable:hover {
   cursor: pointer;
 }
 
-.forms-label:hover .forms-input {
+.form__lable:hover .form__input {
   border: 1px solid var(--primary-element-accent-color);
   cursor: pointer;
 }
 
-.forms-label:hover .forms-icon {
+.form__lable:hover .form__icon {
   fill: var(--primary-element-accent-color);
 }
 
-.forms-input:focus + .forms-icon {
+.form__input:focus + .form__icon {
   fill: var(--primary-element-accent-color);
 }
 
-.forms-input:focus {
+.form__input:focus {
   border: 1px solid var(--primary-element-accent-color);
 }
 
-.forms-label.textarea {
-  margin-bottom: 20px;
-}
-
-textarea {
+.textarea {
   width: 100%;
 
   resize: none;
@@ -175,7 +174,7 @@ textarea {
   transition-timing-function: var(--primary-timing-function);
 }
 
-textarea::placeholder {
+.textarea::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.14;
@@ -183,27 +182,16 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.forms-label:hover textarea {
+.form__lable:hover .textarea {
   border: 1px solid var(--primary-element-accent-color);
   cursor: pointer;
 }
 
-textarea:focus {
+.textarea:focus {
   border: 1px solid var(--primary-element-accent-color);
 }
 
-.policy-check {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.label-policy {
+.policy {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,11 +204,11 @@ textarea:focus {
   letter-spacing: 0.03em;
 }
 
-.label-policy:hover {
+.policy:hover {
   cursor: pointer;
 }
 
-.checkbox {
+.policy__checkbox-custom {
   display: inline-block;
 
   position: relative;
@@ -238,58 +226,28 @@ textarea:focus {
   transition-timing-function: var(--primary-timing-function);
 }
 
-.checkbox-icon {
+.policy__checkbox-icon {
   position: absolute;
   top: -2px;
   left: -2px;
 }
 
-.policy-check:hover + .checkbox,
-.policy-check:focus + .checkbox {
+.policy__checkbox-original:hover + .policy__checkbox-custom,
+.policy__checkbox-original:focus + .policy__checkbox-custom {
   border: 2px solid var(--primary-element-accent-color);
 }
 
-.policy-check:checked + .checkbox {
+.policy__checkbox-original:checked + .policy__checkbox-custom {
   background-color: var(--primary-element-accent-color);
   border: 2px solid transparent;
 }
 
-.link-policy {
+.policy__link {
   color: var(--primary-text-accent-color);
 }
 
-.submit-form-btn {
-  display: block;
-
-  width: 200px;
-
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-
-  border: 0;
-  border-radius: 4px;
-
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-button-color);
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-
+.modal__button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition-property: background-color;
-  transition-duration: var(--primary-duration);
-  transition-timing-function: var(--primary-timing-function);
-}
-
-.submit-form-btn:hover,
-.submit-form-btn:focus {
-  cursor: pointer;
-  background-color: var(--tertiary-element-accent-color);
 }
 
 /* Преимущества / особенности ВебСтудии */
@@ -628,7 +586,7 @@ address {
   justify-content: start;
 }
 
-.our-newsletter .forms-input {
+.our-newsletter .form__input {
   display: inline-block;
 
   width: 358px;
@@ -653,7 +611,7 @@ address {
   transition-timing-function: var(--primary-timing-function);
 }
 
-.our-newsletter .forms-input::placeholder {
+.our-newsletter .form__input::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;

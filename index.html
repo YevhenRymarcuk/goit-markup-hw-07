@@ -75,52 +75,52 @@
                <!-- Модальное окно -->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button class="closing-modal-btn" type="button" data-modal-close>
-                            <svg width="11" height="11" class="closing-modal-icon">
+                        <button class="button modal__closing-button" type="button" data-modal-close>
+                            <svg width="11" height="11" class="button__icon">
                                 <use href="./images/icons.svg#cross"></use>
                             </svg>
                         </button>
 
-                        <h2 class="main-title-form visually-hidden">Форма заказа услуги</h2>
-                        <p class="title-form">Оставьте свои данные, мы вам перезвоним</p>
+                        <h2 class="modal__title visually-hidden">Форма заказа услуги</h2>
+                        <p class="modal__offer">Оставьте свои данные, мы вам перезвоним</p>
 
                         <form class="form">
-                            <label class="forms-label">
+                            <label class="form__lable">
                                 Имя
-                                <input class="forms-input" type="text" name="username">
-                                <svg width="18" height="18" class="forms-icon">
+                                <input class="form__input" type="text" name="username">
+                                <svg width="18" height="18" class="form__icon">
                                     <use href="./images/icons.svg#person"></use>
                                 </svg>
                             </label>
-                            <label class="forms-label">
+                            <label class="form__lable">
                                 Телефон
-                                <input class="forms-input" type="tel" name="user-phone">
-                                <svg width="18" height="18" class="forms-icon">
+                                <input class="form__input" type="tel" name="user-phone">
+                                <svg width="18" height="18" class="form__icon">
                                     <use href="./images/icons.svg#phone"></use>
                                 </svg>
                             </label>
-                            <label class="forms-label">
+                            <label class="form__lable">
                                 Почта
-                                <input class="forms-input" type="email" name="users-email">
-                                <svg width="18" height="18" class="forms-icon">
+                                <input class="form__input" type="email" name="users-email">
+                                <svg width="18" height="18" class="form__icon">
                                     <use href="./images/icons.svg#email"></use>
                                 </svg>
                             </label>
-                            <label class="forms-label textarea">
+                            <label class="form__lable form__lable--another-margin">
                                 Комментарий
-                                <textarea name="user-comments" rows="6" placeholder="Введите текст"></textarea>
+                                <textarea class="textarea" name="user-comments" rows="6" placeholder="Введите текст"></textarea>
                             </label>
-                            <label class="label-policy">
-                                <input class="policy-check" type="checkbox" name="policy-check" value="terms-of-use">
-                                <span class="checkbox">
-                                    <svg width="15" height="15" class="checkbox-icon">
+                            <label class="policy">
+                                <input class="policy__checkbox-original visually-hidden" type="checkbox" name="policy-checkbox" value="terms-of-use">
+                                <span class="policy__checkbox-custom">
+                                    <svg width="15" height="15" class="policy__checkbox-icon">
                                         <use href="./images/icons.svg#icon-check"></use>
                                     </svg>
                                 </span>
-                                Соглашаюсь с рассылкой и принимаю&#xa0;<a class="link-policy" href="#">Условия договора</a>
+                                Соглашаюсь с рассылкой и принимаю&#xa0;<a class="policy__link" href="#">Условия договора</a>
                             </label>
 
-                            <button class="submit-form-btn" type="submit">Отправить</button>
+                            <button class="button modal__button" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -540,8 +540,8 @@
                     <h3 class="item-title">Подпишитесь на рассылку</h3>
 
                     <form class="form-newsletter">
-                        <label class="forms-label">
-                            <input class="forms-input" type="email" name="users-email" placeholder="E-mail">
+                        <label class="form__lable form__lable--no-margin">
+                            <input class="form__input" type="email" name="users-email" placeholder="E-mail">
                         </label>
 
                         <button class="submit-form-btn" type="submit">
