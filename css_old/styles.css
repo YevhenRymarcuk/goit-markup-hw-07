@@ -38,13 +38,13 @@
 
 /* Услуги ВебСтудии */
 
-.services.section {
+/* .services.section {
   padding-top: 0;
-}
+} */
 
-.services .section-title-main {
+/* .services .section-title-main {
   margin-bottom: 50px;
-}
+} */
 
 .services-list {
   display: flex;
@@ -84,13 +84,13 @@
 }
 
 /* Наша команда */
-.team {
+/* .team {
   background-color: var(--section-bg-color);
-}
+} */
 
-.team .section-title-main {
+/* .team .section-title-main {
   margin-bottom: 50px;
-}
+} */
 
 .team-list {
   display: flex;
@@ -189,9 +189,9 @@
 }
 
 /* Постоянные клиенты */
-.clients .section-title-main {
+/* .clients .section-title-main {
   margin-bottom: 50px;
-}
+} */
 
 .clients-list {
   display: flex;

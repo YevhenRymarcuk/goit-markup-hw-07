@@ -61,6 +61,18 @@ input {
   padding: 94px 0;
 }
 
+.section__title--margin {
+  margin-bottom: 50px;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--background-color {
+  background-color: var(--section-bg-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

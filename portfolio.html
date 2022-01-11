@@ -68,8 +68,8 @@
     <main class="main-content">
 
         <!-- Портфолио студии с фильтрами работ -->
-        <section class="portfolio section">
-            <h2 class="section-title-main visually-hidden">Портфолио студии</h2>
+        <section class="section">
+            <h2 class="section__title visually-hidden">Портфолио студии</h2>
 
             <!-- Список фильтров -->
             <div class="container">
@@ -328,7 +328,9 @@
         <div class="container">
             <div class="information-about-us">
                 <div class="our-contacts">
-                    <a class="logo" href="./index.html"><span class="accent-logo">Web</span>Studio</a>
+                    <a class="logo footer__logo" href="./index.html">
+                        <span class="logo__accent">Web</span>Studio
+                    </a>
     
                     <address class="address">
                         <p>г. Киев, пр-т Леси Украинки, 26,</p>
@@ -379,15 +381,15 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <div class="our-newsletter">
                     <h3 class="item-title">Подпишитесь на рассылку</h3>
-                
+    
                     <form class="form-newsletter">
-                        <label class="forms-label">
-                            <input class="forms-input" type="email" name="users-email" placeholder="E-mail">
+                        <label class="form__label form__label--no-margin">
+                            <input class="form__input" type="email" name="users-email" placeholder="E-mail">
                         </label>
-                
+    
                         <button class="submit-form-btn" type="submit">
                             Подписаться
                             <svg width="24" height="24" class="icon-send">
