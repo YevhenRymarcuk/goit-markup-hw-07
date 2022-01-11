@@ -882,4 +882,79 @@ input {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+/* Ссылки на социальные сети */
+.social-networks-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-networks-list__icon-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: var(--primary-duration);
+       -o-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--primary-timing-function);
+       -o-transition-timing-function: var(--primary-timing-function);
+          transition-timing-function: var(--primary-timing-function);
+}
+
+.social-networks-list__icon-box--another {
+  background-color: var(--secondary-bg-color-icon);
+}
+
+.social-networks-list__icon {
+  fill: var(--primary-icon-color);
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: var(--primary-duration);
+       -o-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--primary-timing-function);
+       -o-transition-timing-function: var(--primary-timing-function);
+          transition-timing-function: var(--primary-timing-function);
+}
+
+.social-networks-list__icon--another {
+  fill: var(--secondary-icon-color);
+}
+
+.social-networks-list__link:hover .social-networks-list__icon-box,
+.social-networks-list__link:focus .social-networks-list__icon-box {
+  background-color: var(--primary-element-accent-color);
+}
+
+.social-networks-list__link:hover .social-networks-list__icon,
+.social-networks-list__link:focus .social-networks-list__icon {
+  fill: var(--secondary-element-accent-color);
+}
 /*# sourceMappingURL=main.css.map */
