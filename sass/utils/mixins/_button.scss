@@ -6,10 +6,10 @@
   $display: 0,
   $justifyContent: 0,
   $alignItems: 0,
-  $margin: 0,
-  $padding: 0,
   $width: 0,
   $height: 0,
+  $margin: 0,
+  $padding: 0,
   $border: 0,
   $borderRadius: 0,
   $backgroundColor: 0,
@@ -44,17 +44,17 @@
   @if $alignItems != 0 {
     align-items: $alignItems;
   }
-  @if $margin != 0 {
-    margin: $margin;
-  }
-  @if $padding != 0 {
-    padding: $padding;
-  }
   @if $width != 0 {
     width: $width;
   }
   @if $height != 0 {
     height: $height;
+  }
+  @if $margin != 0 {
+    margin: $margin;
+  }
+  @if $padding != 0 {
+    padding: $padding;
   }
   @if $border != 0 {
     border: $border;
@@ -106,10 +106,10 @@
   $display: block,
   $justifyContent: 0,
   $alignItems: 0,
-  $margin: 0 auto,
-  $padding: 10px 32px,
   $width: 0,
   $height: 0,
+  $margin: 0 auto,
+  $padding: 10px 32px,
   $border: none,
   $borderRadius: 4px,
   $backgroundColor: var(--secondary-button-color),
