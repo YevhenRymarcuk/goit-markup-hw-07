@@ -4,15 +4,9 @@
   display: flex;
 }
 
-.team-item {
+.team-list__item {
   flex-basis: calc(100% - (3 * var(--flexbox-items-gap)) / 4);
-}
 
-.team-item:not(:last-child) {
-  margin-right: var(--flexbox-items-gap);
-}
-
-.team-item {
   padding-bottom: 30px;
 
   background-color: #ffffff;
@@ -23,15 +17,15 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item-link {
-  text-decoration: none;
+.team-list__item:not(:last-child) {
+  margin-right: var(--flexbox-items-gap);
 }
 
-.team-item-images {
+.team-list__item-images {
   margin-bottom: 30px;
 }
 
-.team-list .item-title {
+.team-list__item-title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -41,7 +35,7 @@
   letter-spacing: 0.03em;
 }
 
-.team-list .item-text {
+.team-list__item-text {
   color: var(--primary-text-color);
 
   margin-bottom: 16px;
@@ -53,6 +47,8 @@
   letter-spacing: 0.03em;
 }
 
+/* Ссылки на социальные сети */
+
 .social-networks-list {
   width: 206px;
   height: 44px;
@@ -63,7 +59,7 @@
   justify-content: space-between;
 }
 
-.social-network-icon-box {
+.social-networks-list__icon-box {
   width: 44px;
   height: 44px;
 
@@ -78,7 +74,11 @@
   transition-timing-function: var(--primary-timing-function);
 }
 
-.social-network-icon {
+.social-networks-list__icon-box--another {
+  background-color: var(--secondary-bg-color-icon);
+}
+
+.social-networks-list__icon {
   fill: var(--primary-icon-color);
 
   transition-property: fill;
@@ -86,20 +86,21 @@
   transition-timing-function: var(--primary-timing-function);
 }
 
-.social-network-link:focus .social-network-icon-box,
-.social-network-link:hover .social-network-icon-box {
+.social-networks-list__icon--another {
+  fill: var(--secondary-icon-color);
+}
+
+.social-networks-list__link:focus .social-networks-list__icon-box,
+.social-networks-list__link:hover .social-networks-list__icon-box {
   background-color: var(--primary-element-accent-color);
 }
 
-.social-network-link:focus .social-network-icon,
-.social-network-link:hover .social-network-icon {
+.social-networks-list__link:focus .social-networks-list__icon,
+.social-networks-list__link:hover .social-networks-list__icon {
   fill: var(--secondary-element-accent-color);
 }
 
 /* Постоянные клиенты */
-/* .clients .section-title-main {
-  margin-bottom: 50px;
-} */
 
 .clients-list {
   display: flex;
@@ -212,14 +213,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-}
-
-.our-social-networks .social-network-icon-box {
-  background-color: var(--secondary-bg-color-icon);
-}
-
-.our-social-networks .social-network-icon {
-  fill: var(--secondary-icon-color);
 }
 
 .our-newsletter {
