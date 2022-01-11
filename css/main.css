@@ -787,4 +787,52 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+/* Услуги ВебСтудии */
+.services-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-list__item {
+  position: relative;
+  -webkit-flex-basis: -webkit-calc(100% - (2 * var(--flexbox-items-gap)) / 3);
+      -ms-flex-preferred-size: calc(100% - (2 * var(--flexbox-items-gap)) / 3);
+          flex-basis: calc(100% - (2 * var(--flexbox-items-gap)) / 3);
+}
+
+.services-list__item:not(:last-child) {
+  margin-right: var(--flexbox-items-gap);
+}
+
+.services-list__item-overlay {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.services-list__item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
 /*# sourceMappingURL=main.css.map */
