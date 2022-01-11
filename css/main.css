@@ -138,6 +138,46 @@ img {
   clip: rect(0 0 0 0);
 }
 
+/*
+
+@include button(
+  $position: 0,
+  $top: 0,
+  $right: 0,
+  //$transformTranslate заполнять как: (x%, y%)
+  $transformTranslate: 0,
+  $display: block,
+  $justifyContent: 0,
+  $alignItems: 0,
+  $margin: 0 auto,
+  $padding: 10px 32px,
+  $width: 0,
+  $height: 0,
+  $border: none,
+  $borderRadius: 4px,
+  $backgroundColor: var(--secondary-button-color),
+  $color: var(--secondary-text-color),
+  // $boxShadow, если теней более одной,
+  // заполнять в круглых скобках, через запятую и
+  // пробел: (<тень>, <тень>)
+  $boxShadow: 0,
+  // $fontFamily, если значений более одного,
+  // заполнять в круглых скобках, через запятую и
+  // пробел: (<значение>, <значение>)
+  $fontFamily:
+    (
+      Roboto,
+      sans-serif,
+    ),
+  $fontStyle: normal,
+  $fontWeight: bold,
+  $fontSize: 16px,
+  $lineHeight: 1.87,
+  $textAlign: center,
+  $letterSpacing: 0.06em
+);
+
+*/
 /* I. Стили главной страницы */
 /* Шапка сайта */
 .header {

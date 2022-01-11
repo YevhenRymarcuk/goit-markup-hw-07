@@ -1,5 +1,13 @@
+// Переменные
 @import './utils/variables';
+
+// Базовые стили
 @import './utils/base-styles';
-@import './utils/mixins';
+
+// Утилиты/Миксины
+@import './utils/mixins/button';
+@import './utils/mixins/transition';
+
+// Разделы/компоненты сайта
 @import './components/header';
 @import './components/logo';
