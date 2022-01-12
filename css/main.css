@@ -1190,4 +1190,53 @@ input {
 .footer__button-icon {
   margin-left: 10px;
 }
+
+/* II. Стили страницы "Портфолио" */
+/* Список фильтров */
+.filters-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-list__button {
+  padding: 6px 22px;
+  border: none;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: var(--primary-button-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  -webkit-transition-property: color background-color box-shadow;
+  -o-transition-property: color background-color box-shadow;
+  transition-property: color background-color box-shadow;
+  -webkit-transition-duration: var(--primary-duration);
+       -o-transition-duration: var(--primary-duration);
+          transition-duration: var(--primary-duration);
+  -webkit-transition-timing-function: var(--primary-timing-function);
+       -o-transition-timing-function: var(--primary-timing-function);
+          transition-timing-function: var(--primary-timing-function);
+}
+
+.filters-list__button:hover, .filters-list__button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-element-accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
