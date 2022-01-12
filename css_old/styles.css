@@ -22,12 +22,12 @@
   letter-spacing: 0.03em;
 }
 
-.address p {
+.address__map {
   margin-bottom: 9px;
 }
 
-.footer .contact-mail,
-.footer .contact-number {
+.address__mail,
+.address__phone {
   display: block;
 
   margin: 0;
@@ -38,14 +38,14 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .contact-mail {
+.address__mail {
   margin-bottom: 9px;
 }
 
-.footer .contact-mail:hover,
-.footer .contact-mail:focus,
-.footer .contact-number:hover,
-.footer .contact-number:focus {
+.address__mail:hover,
+.address__mail:focus,
+.address__phone:hover,
+.address__phone:focus {
   color: var(--primary-text-accent-color);
 }
 
@@ -54,7 +54,7 @@
   margin-right: 93px;
 }
 
-.our-social-networks .item-title {
+.our-social-networks__title {
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -69,23 +69,24 @@
   padding-top: 12px;
 }
 
-.our-newsletter .item-title {
+.our-newsletter__title {
   margin-bottom: 17px;
+
+  color: var(--secondary-text-color);
 
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
 }
 
-.form-newsletter {
+.footer__form {
   display: flex;
   justify-content: start;
 }
 
-.our-newsletter .form__input {
+.form__input--footer-style {
   display: inline-block;
 
   width: 358px;
@@ -110,7 +111,7 @@
   transition-timing-function: var(--primary-timing-function);
 }
 
-.our-newsletter .form__input::placeholder {
+.form__input--footer-style::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -118,42 +119,14 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.our-newsletter .submit-form-btn {
+.footer__button {
   display: inline-flex;
 
   justify-content: center;
   align-items: center;
-
-  width: 200px;
-  height: 50px;
-
-  padding: 10px;
-
-  border: 0;
-  border-radius: 4px;
-
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-button-color);
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition-property: cursor background-color;
-  transition-duration: var(--primary-duration);
-  transition-timing-function: var(--primary-timing-function);
 }
 
-.our-newsletter .submit-form-btn:hover,
-.our-newsletter .submit-form-btn:focus {
-  cursor: pointer;
-  background-color: var(--tertiary-element-accent-color);
-}
-
-.icon-send {
+.footer__button-icon {
   margin-left: 10px;
 }
 
