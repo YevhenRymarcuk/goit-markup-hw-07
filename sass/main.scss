@@ -9,13 +9,18 @@
 @import './utils/mixins/transition';
 
 // Разделы/компоненты сайта
-@import './components/header';
-@import './components/logo';
-@import './components/hero';
-@import './components/modal';
-@import './components/benefits';
-@import './components/services';
-@import './components/team';
-@import './components/social-links-list';
-@import './components/regular-clients';
-@import './components/footer';
+// 1. Страница "Студия"
+@import './components/studio/header';
+@import './components/studio/logo';
+@import './components/studio/hero';
+@import './components/studio/modal';
+@import './components/studio/benefits';
+@import './components/studio/services';
+@import './components/studio/team';
+@import './components/studio/social-links-list';
+@import './components/studio/regular-clients';
+@import './components/studio/footer';
+
+// 2. Страница "Портфолио"
+@import './components/portfolio/filters-list';
+@import './components/portfolio/works-list';
