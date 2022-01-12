@@ -6,11 +6,11 @@
   margin-bottom: 50px;
 }
 
-.filters-item:not(:last-child) {
+.filters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn {
+.filters-list__button {
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
@@ -30,8 +30,8 @@
   transition-timing-function: var(--primary-timing-function);
 }
 
-.btn:hover,
-.btn:focus {
+.filters-list__button:hover,
+.filters-list__button:focus {
   color: var(--secondary-text-color);
   background-color: var(--primary-element-accent-color);
 
